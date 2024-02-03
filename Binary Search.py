@@ -1,5 +1,5 @@
 #Python program to perform binary search with recursive & non-recursive method
-#Let's see if fetch origin is working or not
+#Let's see if fetch origin is working or not. Adding some more text to sync.
 
 arr = []
 
