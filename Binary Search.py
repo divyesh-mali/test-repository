@@ -1,4 +1,4 @@
-#Python program to perform binary search with recursive & non-recursive method
+#Python program to perform binary search with recursive & non-recursive methods
 
 arr = []
 
