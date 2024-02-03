@@ -19,22 +19,23 @@ def linear_search(roll_list, n, key):   #Arguments: (array, no of elements, elem
 
 
 #Fix the sentinal part !!!!
-def sentinal_search(roll_list, n, key):
+# I hope the changes are visible although its still not working fine
+def sentinel_search(roll_list, n, key):
     key = int(input("Enter the roll no: "))
     last = roll_list[n-1]
     roll_list[n-1] = key
 
-    i=0
-
-    while(roll_list[i] != key):
-        i = i+1
+    i = 0
+    while roll_list[i] != key:
+        i += 1
 
     roll_list[n-1] = last
 
-    if(i<n-1 or roll_list[n-1]):
-        print("The roll no is present at ", i," position")
+    if i < n-1:
+        print("The roll no is present at position:", i)
     else:
         print("The roll no does not exist !!")
+
 
 
 
@@ -47,7 +48,7 @@ while True:
         linear_search(roll_list, n, key)
 
     elif choice == 2:
-        sentinal_search(roll_list, n, key)
+        sentinel_search(roll_list, n, key)
         
 
     elif choice == 3:
